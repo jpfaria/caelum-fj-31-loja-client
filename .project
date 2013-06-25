@@ -3,6 +3,7 @@
 	<name>fj31-loja-client</name>
 	<comment></comment>
 	<projects>
+		<project>fj31-loja-base</project>
 	</projects>
 	<buildSpec>
 		<buildCommand>
