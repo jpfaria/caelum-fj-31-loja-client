@@ -13,14 +13,14 @@ public class ClienteGerenciador {
 		InitialContext ic = new InitialContext();
 
 		GerenciadorLoja gerenciador = (GerenciadorLoja) ic
-				.lookup("ejb:fj31-loja-ear/fj31-loja-ejb3/GerenciadorLojaBean!br.com.caelum.loja.session.GerenciadorLoja");
+				.lookup("ejb:fj31-loja-ear/fj31-loja-ejb3/"
+						+ "GerenciadorLojaBean!br.com.caelum.loja.session.GerenciadorLoja");
 
 		Livro livro = new Livro();
-		livro.setNome("Pais e filhos");
+		livro.setNome("Pais e Filhos");
 		livro.setPreco(25);
-		
+
 		gerenciador.salva(livro);
-		
 
 	}
 
