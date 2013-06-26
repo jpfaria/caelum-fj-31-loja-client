@@ -18,7 +18,7 @@ public class ClienteSalvaLivroComAutor {
 						+ "GerenciadorLojaBean!br.com.caelum.loja.session.GerenciadorLoja");
 
 		Autor autor = new Autor();
-		autor.setNome("Jose");
+		autor.setNome("Fowler");
 		
 		Livro livro = new Livro();
 		livro.setNome("Pais e Filhos");
@@ -27,10 +27,11 @@ public class ClienteSalvaLivroComAutor {
 		autor = gerenciador.salva(autor);
 		System.out.println("Id do autor: " + autor.getId());
 		
-		livro = gerenciador.salva(livro);
+		//livro = gerenciador.salva(livro);
 		System.out.println("Id do livro: " + livro.getId());
 		
 		livro.getAutores().add(autor);
+		gerenciador.salva(livro);
 
 	}
 
